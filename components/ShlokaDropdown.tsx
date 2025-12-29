@@ -32,7 +32,7 @@ const ShlokaDropdown: React.FC<ShlokaDropdownProps> = ({ results, onSelect, isVi
                 {index + 1}
               </span>
               <div className="flex-1 min-w-0">
-                <p className="devanagari text-sm text-gray-800 leading-relaxed line-clamp-2 group-hover:text-gray-900">
+                <p className="devanagari text-lg text-gray-800 leading-relaxed line-clamp-2 group-hover:text-gray-900">
                   {result.text.split('\n')[0]}...
                 </p>
                 <div className="flex items-center gap-2 mt-1">

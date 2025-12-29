@@ -20,7 +20,7 @@ const App: React.FC = () => {
               <span className="devanagari text-xl sm:text-2xl font-bold">श</span>
             </div>
             <div>
-              <h1 className="text-lg sm:text-xl font-bold text-gray-800 tracking-tight">श्लोक संग्रह</h1>
+              <h1 className="text-lg sm:text-xl font-bold text-gray-800 tracking-tight">श्लोकसंधानम्</h1>
               <p className="text-[10px] sm:text-xs text-saffron font-bold tracking-widest uppercase hidden sm:block">Sanskrit Shloka Explorer</p>
             </div>
           </div>
@@ -129,10 +129,12 @@ const App: React.FC = () => {
       <footer className="bg-gray-50 border-t border-gray-200 py-6 mt-12">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <p className="text-sm text-gray-600">
-            © 2024 श्लोक संग्रह | Sanskrit Shloka Explorer
-          </p>
+            © {new Date().getFullYear()} श्लोकसंधानम् | Sanskrit Shloka Explorer</p>
           <p className="text-xs text-gray-500 mt-2">
             {totalCount.toLocaleString('en-US')} shlokas from classical Sanskrit literature
+          </p>
+          <p className="text-xs text-gray-500 mt-1">
+            Made by <span className="text-saffron">Jagdanand Jha</span> and <span className="text-saffron">Jayesh Krishna</span>
           </p>
         </div>
       </footer>

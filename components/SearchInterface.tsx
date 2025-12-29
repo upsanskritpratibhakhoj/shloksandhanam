@@ -185,15 +185,10 @@ const SearchInterface: React.FC = () => {
       )}
 
       {/* Statistics */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100 text-center">
           <div className="text-3xl font-bold text-saffron">{totalCount.toLocaleString('en-US')}</div>
           <div className="text-sm text-gray-600 mt-2">कुल श्लोक (Total Shlokas)</div>
-        </div>
-        
-        <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100 text-center">
-          <div className="text-3xl font-bold text-saffron">{searchResults.length}</div>
-          <div className="text-sm text-gray-600 mt-2">खोज परिणाम (Search Results)</div>
         </div>
         
         <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100 text-center">
