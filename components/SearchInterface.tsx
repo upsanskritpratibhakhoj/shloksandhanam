@@ -3,12 +3,15 @@ import { searchShlokas, ShlokaSearchResult, getTotalShlokaCount } from '../servi
 import ShlokaDropdown from './ShlokaDropdown';
 import ShlokaDetailView from './ShlokaDetailView';
 import { Shloka } from '../types';
+import Sanscript from '@indic-transliteration/sanscript';
+import { normalizePhonetic, isDevanagari } from '../utils/phoneticNormalizer';
 
 const SearchInterface: React.FC = () => {
   const [searchInput, setSearchInput] = useState('');
   const [searchResults, setSearchResults] = useState<ShlokaSearchResult[]>([]);
   const [showDropdown, setShowDropdown] = useState(false);
   const [selectedShloka, setSelectedShloka] = useState<Shloka | null>(null);
+  const [transliteratedPreview, setTransliteratedPreview] = useState('');
   const searchRef = useRef<HTMLDivElement>(null);
   const totalCount = getTotalShlokaCount();
 
@@ -18,9 +21,23 @@ const SearchInterface: React.FC = () => {
       const results = searchShlokas(searchInput, 50);
       setSearchResults(results);
       setShowDropdown(true);
+      
+      // Generate transliteration preview for English input
+      if (!isDevanagari(searchInput)) {
+        try {
+          const normalized = normalizePhonetic(searchInput.trim());
+          const preview = Sanscript.t(normalized, 'itrans', 'devanagari');
+          setTransliteratedPreview(preview);
+        } catch (error) {
+          setTransliteratedPreview('');
+        }
+      } else {
+        setTransliteratedPreview('');
+      }
     } else {
       setSearchResults([]);
       setShowDropdown(false);
+      setTransliteratedPreview('');
     }
   }, [searchInput]);
 
@@ -49,6 +66,7 @@ const SearchInterface: React.FC = () => {
     setSelectedShloka(null);
     setSearchInput('');
     setSearchResults([]);
+    setTransliteratedPreview('');
   };
 
   return (
@@ -79,7 +97,7 @@ const SearchInterface: React.FC = () => {
             type="text"
             value={searchInput}
             onChange={(e) => setSearchInput(e.target.value)}
-            placeholder="श्लोक का आरंभ लिखें... (Type the beginning of a shloka...)"
+            placeholder="श्लोक का आरंभ लिखें... या Type in English (e.g., 'raghuvamsham', 'ansham')"
             className="w-full pl-14 pr-6 py-5 text-lg border-2 border-gray-200 rounded-2xl focus:outline-none focus:border-saffron focus:ring-4 focus:ring-orange-100 transition-all shadow-sm devanagari"
           />
           
@@ -89,6 +107,7 @@ const SearchInterface: React.FC = () => {
                 setSearchInput('');
                 setSearchResults([]);
                 setShowDropdown(false);
+                setTransliteratedPreview('');
               }}
               className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors"
             >
@@ -98,6 +117,14 @@ const SearchInterface: React.FC = () => {
             </button>
           )}
         </div>
+
+        {/* Transliteration Preview */}
+        {transliteratedPreview && !isDevanagari(searchInput) && (
+          <div className="mt-2 text-sm text-gray-500 bg-orange-50 px-3 py-2 rounded-md">
+            <span className="text-gray-400">Searching for: </span>
+            <span className="devanagari font-semibold text-saffron">{transliteratedPreview}</span>
+          </div>
+        )}
 
         {/* Dropdown Results */}
         <ShlokaDropdown
@@ -122,9 +149,9 @@ const SearchInterface: React.FC = () => {
                   1
                 </div>
                 <div>
-                  <h4 className="font-bold text-gray-800 mb-2">खोज बॉक्स में टाइप करें</h4>
+                  <h4 className="font-bold text-gray-800 mb-2">देवनागरी या English में टाइप करें</h4>
                   <p className="text-sm text-gray-600">
-                    देवनागरी में श्लोक का आरंभिक भाग लिखें
+                    देवनागरी में या English अक्षरों में श्लोक का आरंभिक भाग लिखें (जैसे: "raghuvamsham" या "रघुवंशम्")
                   </p>
                 </div>
               </div>
@@ -175,11 +202,13 @@ const SearchInterface: React.FC = () => {
 
           <div className="bg-white rounded-xl p-6 border-l-4 border-saffron">
             <h4 className="font-bold text-gray-800 mb-2 flex items-center gap-2">
-              <span>💡</span> सुझाव (Tip)
+              <span>💡</span> सुझाव (Tips)
             </h4>
-            <p className="text-sm text-gray-600">
-              बेहतर परिणाम के लिए रघुवंशम्, कुमारसंभवम्, मेघदूतम्, नैषधीयचरितम्, किरातार्जुनीयम् जैसे प्रसिद्ध ग्रंथों के श्लोक खोजें।
-            </p>
+            <ul className="text-sm text-gray-600 space-y-2">
+              <li>• बेहतर परिणाम के लिए रघुवंशम्, कुमारसंभवम्, मेघदूतम्, नैषधीयचरितम्, किरातार्जुनीयम् जैसे प्रसिद्ध ग्रंथों के श्लोक खोजें।</li>
+              <li>• English में टाइप करें जैसे: "raghuvamsham", "ansham", "moksha"</li>
+              <li>• System will automatically convert to देवनागरी</li>
+            </ul>
           </div>
         </div>
       )}
