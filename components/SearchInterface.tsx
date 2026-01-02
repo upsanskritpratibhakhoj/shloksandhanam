@@ -97,7 +97,7 @@ const SearchInterface: React.FC = () => {
             type="text"
             value={searchInput}
             onChange={(e) => setSearchInput(e.target.value)}
-            placeholder="श्लोक का आरंभ लिखें... या Type in English (e.g., 'raghuvamsham', 'ansham')"
+            placeholder="श्लोक का आरंभ लिखें..."
             className="w-full pl-14 pr-6 py-5 text-lg border-2 border-gray-200 rounded-2xl focus:outline-none focus:border-saffron focus:ring-4 focus:ring-orange-100 transition-all shadow-sm devanagari"
           />
           
@@ -214,7 +214,7 @@ const SearchInterface: React.FC = () => {
       )}
 
       {/* Statistics */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100 text-center">
           <div className="text-3xl font-bold text-saffron">{totalCount.toLocaleString('en-US')}</div>
           <div className="text-sm text-gray-600 mt-2">कुल श्लोक (Total Shlokas)</div>
@@ -222,7 +222,12 @@ const SearchInterface: React.FC = () => {
         
         <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100 text-center">
           <div className="text-3xl font-bold text-saffron">15+</div>
-          <div className="text-sm text-gray-600 mt-2">संस्कृत ग्रंथ (Sanskrit Texts)</div>
+          <div className="text-sm text-gray-600 mt-2">काव्य ग्रन्थ (Kavya Texts)</div>
+        </div>
+
+        <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100 text-center">
+          <div className="text-3xl font-bold text-saffron">55+</div>
+          <div className="text-sm text-gray-600 mt-2">स्तोत्र (Stotra)</div>
         </div>
       </div>
 
