@@ -38,7 +38,9 @@ export const shlokaAudioDatabase: Record<string, string> = {
 
   "प्रत्यासन्ने नभसि दयिताजीवितालम्बनार्थी जीमूतेन स्वकुशलमयीं हारयिष्यन्प्रवृत्तिम् । स प्रत्यग्रैः कुटजकुसुमैः कल्पितार्घाय तस्मै प्रीतः प्रीतिप्रमुखवचनं स्वागतं व्याजहार" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/प्रत्यासन्ने नभसि 4.mp3",
 
-  "रत्नच्छायाव्यतिकर इव प्रेक्ष्यमेतत्पुरस्ताद् वल्मीकाग्रात् प्रभवति धनुःखण्डमाखण्डलस्य । येन श्यामं वपुरतितरां कान्तिमापत्स्यते ते बर्हेणेव स्फुरितरुचिना गोपवेषस्य विष्णोः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/रत्नच्छायाव्यतिकर 15.mp3"
+  "रत्नच्छायाव्यतिकर इव प्रेक्ष्यमेतत्पुरस्ताद् वल्मीकाग्रात् प्रभवति धनुःखण्डमाखण्डलस्य । येन श्यामं वपुरतितरां कान्तिमापत्स्यते ते बर्हेणेव स्फुरितरुचिना गोपवेषस्य विष्णोः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/रत्नच्छायाव्यतिकर 15.mp3",
+
+  "तस्मिन्नद्रौ कतिचिदबलाविप्रयुक्तः स कामी नीत्वा मासान् कनकवलयभ्रंशरिक्तप्रकोष्ठः । आषाढस्य प्रथमदिवसे मेघमाश्लिष्टसानुं वप्रक्रीडापरिणतगजप्रेक्षणीयं ददर्श" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/तस्मिन् 2.mpeg"
   
   // Add more shloka-to-audio mappings here
   // "shloka text": "CDN_URL",
