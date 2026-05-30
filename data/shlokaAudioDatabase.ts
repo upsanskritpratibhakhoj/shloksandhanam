@@ -151,6 +151,22 @@ export const shlokaAudioDatabase: Record<string, string> = {
 
   "स्थितः स्थितामुच्चलितः प्रयातां निषेदुषीमासनबन्धधीरः । जलाभिलाषी जलमादधानां छायेव तां भूपतिरन्वगच्छत्" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/स्थितः स्थितामुच्चलितः.mp3",
 
+  "अथ क्षमामेव निरस्तसाधनश्चिराय पर्येषि सुखस्य साधनम् । विहाय लक्ष्मीपतिलक्ष्म कार्मुकं जटाधरः सञ्जुहुधीह पावकम्" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/अथ क्षमामेव 44.mp3",
+
+  "अनारतं यौ मणिपीठशायिनावरञ्जयद्राजशिरःस्रजां रजः । निषीदतस्तौ चरणौ वनेषु ते मृगद्विजालूनशिखेषु बर्हिषाम्" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/अनारतं यौ 40.mp3",
+
+  "द्विषन्निमित्ता यदियं दशा ततः समूलमुन्मूलयतीव मे मनः । परैरपर्यासितवीर्यसम्पदां पराभवोऽप्युत्सव एव मानिनाम्" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/द्विषन्निमित्ता यदियं 41.mp3",
+
+  "न समयपरिरक्षणं क्षमं ते निकृतिपरेषु परेषु भूरिधाम्नः । अरिषु हि विजयार्थिनः क्षितीशा विदधति सोपधि संधिदूषणानि " : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/न समयपरिरक्षणं 45.mp3",
+
+  "पुरःसरा धामवतां यशोधनाः सुदुःसहं प्राप्य निकारमीदृशम् । भवादृशाश्चेदधिकुर्वते परान्निराश्रया हन्त हता मनस्विता" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/पुरःसरा धामवतां 43.mp3",
+
+  "महीभुजां सच्चरितैश्चरैः क्रियाः स वेद निःशेषमशेषितक्रियः ।महोदयैस्तस्य हितानुबन्धिभिः प्रतीयते धातुरिवेहितं फलैः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/महीभुजां सच्चरितैश्चरैः 20.mp3",
+
+  "विधिसमयनियोगाद्दीप्तिसंहारजिह्मं शिथिलबलमगाधे मग्नमापत्पयोधौ । रिपुतिमिरमुदस्योदीयमानं दिनादौ दिनकृतमिव लक्ष्मीस्त्वां समभ्येतु" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/विधिसमयनियोगाद्दीप्ति 46.mp3",
+
+  "विहाय शान्तिं नृप धाम तत्पुनः प्रसीद संधेहि वधाय विद्विषाम् । व्रजन्ति शत्रूनवधूय निःस्पृहाः शमेन सिद्धिं मुनयो न भूभृतः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/विहाय शान्तिं नृप 42.mp3",
+
 
   // "" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/.mp3",
   
