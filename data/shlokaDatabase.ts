@@ -1,5 +1,5 @@
 // Auto-generated shloka database
-// Generated on: 2026-02-27T20:17:53.722Z
+// Generated on: 2026-06-05T17:03:06.319Z
 // Total shlokas: 10938
 
 export interface ShlokaEntry {
