@@ -106,30 +106,42 @@ export default async function ShlokaPage({ params }: PageProps) {
               </p>
             </section>
 
-            <section className="grid gap-4 sm:grid-cols-2">
-              <div className="bg-white border-2 border-orange-200 rounded-2xl p-5 text-center">
-                <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-3">
-                  Next Character
-                </h3>
-                <div className="w-20 h-20 rounded-full bg-saffron text-white flex items-center justify-center shadow-lg mx-auto">
-                  <span className="devanagari text-4xl font-bold">{entry.nextChar}</span>
+            <section className="grid gap-4">
+              <div className="rounded-2xl border border-orange-200 bg-white p-5 shadow-sm">
+                <div className="mb-5 flex items-center gap-3 border-b border-orange-100 pb-4">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-orange-50 text-saffron">
+                    <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                      <path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-sm font-extrabold uppercase tracking-[0.16em] text-slate-700">
+                      Listen to Shloka
+                    </h3>
+                    <p className="text-xs text-slate-500">Audio recitation</p>
+                  </div>
                 </div>
-              </div>
-
-              <div className="bg-white border-2 border-orange-200 rounded-2xl p-5">
-                <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-3">
-                  Audio
-                </h3>
                 {audioUrl ? (
-                  <audio controls className="w-full">
-                    <source src={audioUrl} />
-                    Your browser does not support audio playback.
-                  </audio>
+                  <div className="rounded-2xl bg-slate-50 p-3">
+                    <audio controls className="w-full">
+                      <source src={audioUrl} />
+                      Your browser does not support audio playback.
+                    </audio>
+                  </div>
                 ) : (
-                  <p className="text-sm text-gray-500">
+                  <p className="rounded-xl bg-slate-50 px-4 py-3 text-sm text-slate-500">
                     Audio is not available for this shloka yet.
                   </p>
                 )}
+              </div>
+
+              <div className="rounded-2xl border-2 border-orange-200 bg-white p-5 text-center">
+                <h3 className="mb-3 text-xs font-bold uppercase tracking-wide text-gray-500">
+                  Next Character
+                </h3>
+                <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-saffron text-white shadow-lg">
+                  <span className="devanagari text-4xl font-bold">{entry.nextChar}</span>
+                </div>
               </div>
             </section>
           </div>
