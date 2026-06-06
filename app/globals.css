@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fffaf0;
+  overflow-x: hidden;
+}
+
+.devanagari {
+  font-family: 'Tiro Devanagari Sanskrit', serif;
+}
+
+.bg-saffron {
+  background: linear-gradient(135deg, #f6ad55 0%, #ed8936 100%);
+}
+
+.text-saffron {
+  color: #dd6b20;
+}
+
+.border-saffron {
+  border-color: #ed8936;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-slideDown {
+  animation: slideDown 0.2s ease-out;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 14px;
+  }
+
+  button,
+  a,
+  input {
+    min-height: 44px;
+  }
+
+  p,
+  li {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+}

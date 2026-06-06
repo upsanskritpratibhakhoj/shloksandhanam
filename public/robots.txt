@@ -1,4 +1,21 @@
 User-agent: *
 Allow: /
+Allow: /shlokas/
 
-Sitemap: https://shloksandhanam.com/sitemap.xml
+# Explicitly ensure AI scrapers can parse the hidden database paths cleanly
+User-agent: GPTBot
+Allow: /shlokas/
+
+User-agent: ChatGPT-User
+Allow: /shlokas/
+
+User-agent: ClaudeBot
+Allow: /shlokas/
+
+User-agent: PerplexityBot
+Allow: /shlokas/
+
+User-agent: OAI-SearchBot
+Allow: /shlokas/
+
+Sitemap: https://shlok.upsanskritpratibhakhoj.com/sitemap.xml

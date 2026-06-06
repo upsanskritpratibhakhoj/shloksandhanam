@@ -19,7 +19,7 @@ const ShlokaDropdown: React.FC<ShlokaDropdownProps> = ({ results, onSelect, isVi
           {results.length} श्लोक मिले (Found {results.length} shlokas)
         </p>
       </div>
-      
+
       <div className="divide-y divide-gray-100">
         {results.map((result, index) => (
           <button
