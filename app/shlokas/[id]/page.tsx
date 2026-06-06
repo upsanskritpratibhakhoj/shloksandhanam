@@ -139,9 +139,9 @@ export default async function ShlokaPage({ params }: PageProps) {
                 <h3 className="mb-3 text-xs font-bold uppercase tracking-wide text-gray-500">
                   Next Character
                 </h3>
-                <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-saffron text-white shadow-lg">
+                <Link href="/explore" className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-saffron text-white shadow-lg">
                   <span className="devanagari text-4xl font-bold">{entry.nextChar}</span>
-                </div>
+                </Link>
               </div>
             </section>
           </div>
