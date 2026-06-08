@@ -339,13 +339,33 @@ export const shlokaAudioDatabase: Record<string, string> = {
 
   "सेयं स्वदेहार्पणनिष्क्रयेण न्याय्या मया मोचयितुं भवत्तः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/सेयं स्वदेहार्पणनिष्क्रयेण.mp3",
 
-  "" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/हर्तुर्याति न गोचरं.mp3",
-
   // "" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/.mp3",
   
   // Add more shloka-to-audio mappings here
   // "shloka text": "CDN_URL",
 };
+
+const TRAILING_REFERENCE_PATTERN = /\s*॥[^॥]*॥\s*$/u;
+
+const normalizeShlokaForAudioLookup = (text: string): string => {
+  return text
+    .replace(TRAILING_REFERENCE_PATTERN, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+};
+
+const normalizedAudioLookup = Object.entries(shlokaAudioDatabase).reduce<Record<string, string>>(
+  (lookup, [key, url]) => {
+    const normalizedKey = normalizeShlokaForAudioLookup(key);
+
+    if (normalizedKey && !lookup[normalizedKey]) {
+      lookup[normalizedKey] = url;
+    }
+
+    return lookup;
+  },
+  {},
+);
 
 /**
  * Get audio URL for a given shloka text
@@ -357,21 +377,9 @@ export const getAudioUrl = (shlokaText: string): string | null => {
   if (shlokaAudioDatabase[shlokaText]) {
     return shlokaAudioDatabase[shlokaText];
   }
-  
-  // Try to match by first line
-  const firstLine = shlokaText.split('\n')[0].trim();
-  if (shlokaAudioDatabase[firstLine]) {
-    return shlokaAudioDatabase[firstLine];
-  }
-  
-  // Try to find a partial match
-  for (const key in shlokaAudioDatabase) {
-    if (shlokaText.includes(key) || key.includes(firstLine)) {
-      return shlokaAudioDatabase[key];
-    }
-  }
-  
-  return null;
+
+  const normalizedText = normalizeShlokaForAudioLookup(shlokaText);
+  return normalizedAudioLookup[normalizedText] ?? null;
 };
 
 /**
