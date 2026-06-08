@@ -346,10 +346,12 @@ export const shlokaAudioDatabase: Record<string, string> = {
 };
 
 const TRAILING_REFERENCE_PATTERN = /\s*॥[^॥]*॥\s*$/u;
+const SHLOKA_BOUNDARY_CHARS = new Set([' ', '।', '॥', '\n', '\r', '\t', '-', '–', '—']);
 
 const normalizeShlokaForAudioLookup = (text: string): string => {
   return text
     .replace(TRAILING_REFERENCE_PATTERN, '')
+    .replace(/\s*([।॥])\s*/gu, ' $1 ')
     .replace(/\s+/g, ' ')
     .trim();
 };
@@ -367,6 +369,18 @@ const normalizedAudioLookup = Object.entries(shlokaAudioDatabase).reduce<Record<
   {},
 );
 
+const normalizedAudioEntries = Object.entries(normalizedAudioLookup).sort(
+  ([leftKey], [rightKey]) => rightKey.length - leftKey.length,
+);
+
+const isBoundaryMatch = (fullText: string, matchedPrefix: string): boolean => {
+  if (fullText.length === matchedPrefix.length) {
+    return true;
+  }
+
+  return SHLOKA_BOUNDARY_CHARS.has(fullText[matchedPrefix.length]);
+};
+
 /**
  * Get audio URL for a given shloka text
  * @param shlokaText - The shloka text to search for
@@ -379,7 +393,17 @@ export const getAudioUrl = (shlokaText: string): string | null => {
   }
 
   const normalizedText = normalizeShlokaForAudioLookup(shlokaText);
-  return normalizedAudioLookup[normalizedText] ?? null;
+  if (normalizedAudioLookup[normalizedText]) {
+    return normalizedAudioLookup[normalizedText];
+  }
+
+  for (const [normalizedKey, url] of normalizedAudioEntries) {
+    if (normalizedText.startsWith(normalizedKey) && isBoundaryMatch(normalizedText, normalizedKey)) {
+      return url;
+    }
+  }
+
+  return null;
 };
 
 /**
