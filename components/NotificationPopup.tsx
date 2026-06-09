@@ -59,7 +59,7 @@ export default function NotificationPopup() {
           
           <div className="pt-2">
             <Link 
-              href="/shlok-chakra" 
+              href="https://shlok.upsanskritpratibhakhoj.com" 
               className="block w-full text-center bg-saffron text-white font-medium py-2.5 px-4 rounded-xl shadow-md hover:shadow-lg hover:bg-[#dd6b20] transition-all duration-200 text-sm tracking-wide"
             >
               श्लोक चक्र खेलें →
