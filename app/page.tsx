@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { getTotalShlokaCount } from '@/services/shlokaSearchService';
+import NotificationPopup from '../components/NotificationPopup'; // Adjust import path if needed
 
 export default function HomePage() {
   const totalCount = getTotalShlokaCount();
@@ -26,8 +27,11 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <div className="max-w-4xl mx-auto space-y-8 sm:space-y-12 animate-fadeIn">
-        <section className="text-center space-y-4 sm:space-y-6 py-6 sm:py-10 px-4">
+      {/* Render the Client-Side Popup */}
+      <NotificationPopup />
+
+      <div className="max-w-4xl mx-auto space-y-8 sm:space-y-12 animate-fadeIn px-4 relative z-10">
+        <section className="text-center space-y-4 sm:space-y-6 py-6 sm:py-10">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight">
             <span className="text-gray-900 block mb-2 devanagari">संस्कृत श्लोक संग्रह</span>
             <span className="text-saffron block">Sanskrit Shloka Database</span>

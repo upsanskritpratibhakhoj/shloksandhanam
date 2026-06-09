@@ -30,6 +30,7 @@ body {
   border-color: #ed8936;
 }
 
+/* Base Animations */
 .animate-fadeIn {
   animation: fadeIn 0.3s ease-out;
 }
@@ -37,6 +38,32 @@ body {
 .animate-slideDown {
   animation: slideDown 0.2s ease-out;
 }
+
+/* === NEW: Smooth Tilt & Balance Popup Animation === */
+.animate-popupSwoop {
+  /* The cubic-bezier gives it a dynamic snap and smooth settling speed */
+  animation: swoopInAndBalance 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transform-origin: bottom right;
+}
+
+@keyframes swoopInAndBalance {
+  0% {
+    opacity: 0;
+    transform: translate(100%, 80%) rotate(20deg);
+  }
+  55% {
+    opacity: 1;
+    transform: translate(-10px, -15px) rotate(-4deg);
+  }
+  75% {
+    transform: translate(4px, 4px) rotate(2deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+/* ================================================= */
 
 .line-clamp-2 {
   display: -webkit-box;
@@ -50,7 +77,6 @@ body {
     opacity: 0;
     transform: translateY(8px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
@@ -62,7 +88,6 @@ body {
     opacity: 0;
     transform: translateY(-8px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
@@ -73,16 +98,59 @@ body {
   body {
     font-size: 14px;
   }
-
   button,
   a,
   input {
     min-height: 44px;
   }
-
   p,
   li {
     overflow-wrap: break-word;
     word-wrap: break-word;
+  }
+}
+
+.animate-popupSwoop {
+  animation: swoopInAndBalance 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transform-origin: bottom right;
+}
+
+@keyframes swoopInAndBalance {
+  0% {
+    opacity: 0;
+    transform: translate(100%, 80%) rotate(20deg);
+  }
+  55% {
+    opacity: 1;
+    transform: translate(-10px, -15px) rotate(-4deg);
+  }
+  75% {
+    transform: translate(4px, 4px) rotate(2deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+/* === NEW: Reverse Exit Animation === */
+.animate-popupSwoopOut {
+  /* Slightly faster exit (0.8s) so the user isn't kept waiting */
+  animation: swoopOut 0.8s cubic-bezier(0.5, 0, 0.1, 1) forwards;
+  transform-origin: bottom right;
+}
+
+@keyframes swoopOut {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) rotate(0deg);
+  }
+  20% {
+    /* Slight anticipation pull before swooping away */
+    transform: translate(-5px, -5px) rotate(-2deg); 
+  }
+  100% {
+    opacity: 0;
+    transform: translate(100%, 80%) rotate(20deg);
   }
 }
