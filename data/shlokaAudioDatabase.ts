@@ -338,6 +338,176 @@ export const shlokaAudioDatabase: Record<string, string> = {
   "संतानकामाय तथेति कामं राज्ञे प्रतिश्रुत्य पयस्विनी सा" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/संतानकामाय तथेति.mp3",
 
   "सेयं स्वदेहार्पणनिष्क्रयेण न्याय्या मया मोचयितुं भवत्तः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/सेयं स्वदेहार्पणनिष्क्रयेण.mp3",
+  
+  "शिरः शार्वं स्वर्गात्पशुपति शिरसस्ततः क्षितिधरं महीध्रादुत्तुङ्गादवनिमवनेश्चापि जलधिम्" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/10 शिरः शार्वं स्वर्गात्पशुपति.mp3",
+
+  "साहित्यसङ्गीतकलाविहीनः साक्षात्पशुः पुच्छविषाणहीनः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/12 साहित्यसंगीतकलाविहीन.mp3",
+
+
+  "हर्तुर्याति न गोचरं किमपि शं पुष्णाति यत्सर्वदा- ऽप्यर्थिभ्यः प्रतिपाद्यमानमनिशं " : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/हर्तुर्याति न गोचरं.mp3",
+
+  "शक्यो वारयितुं जलेन हुतभुक्छत्रेण सूर्यातपो, नागेन्द्रो निशिताङ्कुशेन समदो दण्डेन" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/शक्यो वारियुतुं जलेन.mp3",
+
+  "नवपलाशपलाशवनं पुरः स्फुटस्फटपरागतपङ्गजं" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/नवपलाशपलाशवनं पुरः 6.2.mp3",
+
+  "अनाघ्रातं पुष्पं किसलयमलूनं कररुहैरनाविद्धं रत्नं मधु नवमनास्वादितरसम्" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/अनाघ्रातं पुष्पम्.mp3",
+
+  "अथात्मनः शब्दगुणं गुणज्ञः पदं विमानेन विगाहमानः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/अथात्मनः शब्दगुणं.mp3",
+
+  "अमी जनस्थानं अपोढविघ्नं मत्वा समारब्धनवोटजानि" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/अमी जनस्थानमपोढविघ्नं.mp3",
+
+  "असौ महेन्द्रद्विपदानगन्धी त्रिमार्गगावीचिविमर्दशीतः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/असौ महेन्द्र-द्विप.mp3",
+
+  "एते वयं सैकतभिन्नशुक्तिपर्यस्तमुक्तापटलं पयोधेः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/एते वयं सैकतभिन्नशुक्ति.mp3",
+
+  "करेण वातायनलम्बितेन स्पृष्टस्त्वया चण्डि कुतूहलिन्या" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/करेण वातायनलम्बितेन.mp3",
+
+  "कुरुष्व तावत्करभोरु पश्चान्मार्गे मृगप्रेक्षिणि दृष्तिपातं" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/कुरुष्व तावत्करभोरु.mp3",
+
+  "क्वचित्पथा संचरते सुराणां क्वचिद्घनानां पततां क्वचिच्च" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/क्वचित् पथा संचरते.mp3",
+
+  "गर्भं दधत्यर्कमरीचयोऽस्माद्विवृद्धिमत्राश्नुवते वसूनि" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/गर्भं दधत्यर्कमरीचयो.mp3",
+
+  "गुरोर्यियक्षोः कपिलेन मेध्ये रसातलं संक्रमिते तुरंगे" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/गुरोर्यियक्षोः कपिलेन.mp3",
+
+  "तवाधरस्परधिषु विद्रुमेषु पर्यस्तं एतत्सहसोर्मिवेगात्" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/तवाधरस्पर्धिषु विद्रुमेषु.mp3",
+
+  "तां तामवस्थां प्रतिपद्यमानं स्थितं दश व्याप्य दिशो महिम्ना" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/तां तामवस्थां प्रतिपद्यमानं.mp3",
+
+  "दूरादयश्चक्रनिभस्य तन्वी तमालतालीवनराजिनीला" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/दूरादयश्चक्रनिभस्य तन्वी.mp3",
+
+  "नाभिप्ररूढाम्बुरुहासनेन संस्तूयमानः प्रथमेन धात्रा" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/नाभिप्ररूढाम्बुरुहासनेन.mp3",
+
+  "पक्षच्छिदा गोत्रभिदात्तगन्धाः शरण्यं एनं शतशो महीध्राः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/पक्षच्छिदा गोत्रभिदात्तगन्धाः.mp3",
+
+  "प्रवृत्तमात्रेण पयांसि पातुं आवर्तवेगाद्भ्रमता घनेन" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/प्रवृत्तमात्रेण पयांसि.mp3",
+
+  "मातङ्गनक्रैः सहसोत्पतद्भिर्भिन्नान्द्विधा पश्य समुद्रफेनान्" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/मातंगनक्रैः सहसोत्पतद्भिर्भिन्नान्.mp3",
+
+  "मुखार्पणेषु प्रकृतिप्रगल्भाः स्वयं तरङ्गाधरदानदक्षः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/मुखार्पणेषु प्रकृतिप्रगल्भाः.mp3",
+
+  "मृग्यश्च दर्भाङ्कुरनिर्व्यपेक्षास्तवागतिज्ञं समबोधयन्मां" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/मृग्यश्च दर्भाङ्कुरनिर्व्यपेक्षा.mp3",
+
+  "रसातलादादिभवेन पुंसा भुवः प्रयुक्तोद्वहनक्रियायाः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/रसातलादादिभवेन.mp3",
+
+  "वेलानिलः केतकरेणुभिस्ते संभावयत्याननं आयताक्षि" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/वेलानिलः केतकरेणुभिस्ते.mp3",
+
+  "वेलानिलाय प्रसृता भुजंगा महोर्मिविस्फूर्जथुनिर्विशेषाः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/वेलानिलाय प्रसृता.mp3",
+
+  "वैदेहि पश्यामलयाद्विभक्तं मत्सेतुना फेनिलं अम्बुराशिं" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/वैदेहि पश्यामलयाद्.mp3",
+
+  "ससत्त्वं आदाय नदीमुखाम्भः संमीलयन्तो विवृताननत्" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/ससत्वमादाय नदीमुखाम्भः.mp3",
+
+  "सैषा स्थली यत्र विचिन्वता त्वां भ्रष्टं मया नूपुरं एकं" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/सैषा स्थली यत्र विचिन्वता.mp3",
+
+  "अथेदं रक्षोभिः कनकहरिणच्छद्मविधिना तथा वृत्तं पापैर्व्यथयति " : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/अथेदं रक्षोभिः कनकहरिणच्छद्मविधिना.mp3",
+
+  "अयि कठोर ! यशः किल ते प्रियं किमयशो ननु घोरमतः परम्" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/अयि कठोर ! यशः किल ते प्रियं.mp3",
+
+  "एते त एव गिरयो विरुवन्मयूरा- स्तान्येव मत्तहरिणानि वनस्थलानि " : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/एते त एव गिरयो .mp3",
+
+  "कष्टो जनः किल जनैरनुरञ्जनीयस्तन्नो यदुक्तमशुभं च न तत्क्षमं ते" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/कष्टो जनः किल जनैरनुरञ्जनीयस्.mp3",
+
+  "गुञ्जत्कुञ्जकुटीरकौशिकघटाघुत्कारवत्कीचक- स्तम्बाडम्बरमूकमौकुलिकुलः क्रौञ्चाभिधोऽयं गिरिः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/गुञ्जत्कुञ्जकुटीरकौशिकघटा.mp3",
+
+  "ब्रह्मादयो ब्रह्महिताय तप्त्वा परःसहस्रं शरदां तपांसि" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/ब्रह्मादयो ब्रह्महिताय तप्त्वा.mp3",
+
+  "लीलोत्खातमृणालकाण्डकवलच्छेदेषु सम्पादिताः पुष्यत्पुष्करवासितस्य पयसो" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/लीलोत्खातमृणालकाण्डकवलच्छेदेषु 3.17.mp3",
+
+  "विश्वम्भरा भगवती भवतीमसूत राजा प्रजापतिसमो जनकः पिता ते" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/विश्वम्भरा भगवती भवतीमसूत.mp3",
+
+  "स्नेहात्सभाजयितुमेत्य दिनान्यमूनि नीत्वोत्सवेन जनकोऽद्य गतो विदेहान्" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/स्नेहात्सभाजयितुमेत्य.mp3",
+
+  "हे हस्त दक्षिण ! मृतस्य शिशोर्द्विजस्य जीवातवे विसृज शूद्रमुनौ कृपाणम्" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/हे हस्त दक्षिण मृतस्य.mp3",
+
+  "अन्वेष्टव्यो यदसि भुवने लोकनाथः शरण्यो मामन्विष्यन्निह" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/अन्वेष्टव्यो यदसि भुवने .mp3",
+
+  "अपत्ये यत्तादृग्दुरितमभवत्तेन महता विषक्तस्तीव्रेण व्रणितदयेन व्यथयता" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/अपत्ये यत्तादृग्दुरितमभवत्तेन .mp3",
+
+  "अयं तावद्बाष्पस्त्रुटित इव मुक्तामणिसरो विसर्पन्धाराभिर्लुठति धरणीं जर्जरकणः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/अयं तावद्बाष्पस्त्रुटित .mp3",
+
+  "अस्मिन्नेव लतागृहे त्वमभवस्तन्मार्गदत्तेक्षणः सा हंसैः कृतकौतुका चिरमभूद्गोदावरीसैकते" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/अस्मिन्नेव लतागृहे .mp3",
+
+  "अस्यैवासीन्महति शिखरे गृध्रराजस्य वास- स्तस्याधस्ताद्वयमपि रतास्तेषु पर्णोटजेषु" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/अस्यैवासीन्महति शिखरे.mp3",
+
+  "आश्च्योतनं नु हरिचन्दनपल्लवानां निष्पीडितेन्दुकरकन्दलजो नु" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/आश्च्योतनं नु .mp3",
+
+  "इदं विश्वं पाल्यं विधिवदभियुक्तेन मनसा प्रियशोको जीवं" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/इदं विश्वं पाल्यं .mp3",
+
+  "इह समदशकुन्ताक्रान्तवानीरमुक्त- प्रसवसुरभिशीतस्वच्छतोया वहन्ति" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/इह समदशकुन्ताक्रान्तवानीरमुक्त.mp3",
+
+  "एतत्पुनर्वनमहो कथमद्य दृष्टं यस्मिन्नभूम चिरमेव पुरा वसन्तः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/एतत्पुनर्वनमहो कथमद्य .mp3",
+
+  "एते ते कुहरेषु गद्गदनदद्गोदावरीवारयो मेघालम्बितमौलिनीलशिखराः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/एते ते कुहरेषु गद्गद.mp3",
+
+  "कण्डूलद्विपगण्डपिण्डकषणोत्कम्पेन संपातिभि- र्धर्मस्रंसितबन्धनैश्च कुसुमैरर्चन्ति गोदावरीम्" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/कण्डूलद्विपगण्डपिण्डकषणोत्कम्पेन.mp3",
+
+  "कन्यायाः किल पूजयन्ति पितरो जामातुराप्तं जनं संबन्धे" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/कन्यायाः किल पूजयन्ति .mp3",
+
+  "करकमलवितीर्णैरम्बुनीवारशष्पै- स्तरुशकुनिकुरङ्गान्मैथिली यानपुष्यत्" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/करकमलवितीर्णैरम्बुनीवारशष्पैः.mp3",
+
+  "किमपि किमपि मन्दं मन्दमासक्तियोगा- दविरलितकपोलं जल्पतोरक्रमेण" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/किमपि किमपि मन्दं .mp3",
+
+  "किसलयमिव मुग्धं बन्धनाद्विप्रलूनं दयकमलशोषी दारुणो दीर्घशोक ग्लपयति परिपाण्डु क्षाममस्याः शरीरं शरदिज" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/किसलयमिव मुग्धं .mp3",
+
+  "चिराद्वेगारम्भी प्रसृत इव तीव्रो विषरसः कुतश्चित्संवेगात्प्रचल इव शल्यस्य" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/चिराद्वेगारम्भी प्रसृत.mp3",
+
+  "चूडाचुम्बितकङ्कपत्रमभितस्तूणीद्वयं पृष्ठतो भस्मस्तोकपवित्रलाञ्छनमुरो धत्ते त्वचं रौरवीम्" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/चूडाचुम्बितकङ्कपत्रमभितस्तूणीद्वयं .mp3",
+
+  "जामातृयज्ञेन वयं निरुद्धास्त्वं बाल एवासि नवं च राज" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/जामातृयज्ञेन वयं निरुद्धास्.mp3",
+
+  "त्वं वह्निर्मुनयो वसिष्ठगृहिणी, गङ्गा च यस्या विदुर्माहात्म्यं यदि वा रघोः कुलगुरुर्देवः स्वयं भास्करः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/त्वं वह्निर्मुनयो .mp3",
+
+  "दत्ताभये त्वयि यमादपि दण्डधारे संजीवितः शिशुरसौ, मम चेयमृद्धिः । शम्बूक एष शिरसा चरणौ नतस्ते" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/दत्ताभये त्वयि यमादपि .mp3",
+
+  "दधति कुहरभाजामत्र भल्लूकयूना- मनुरसितगुरूणि" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/दधति कुहरभाजामत्र.mp3",
+
+  "निष्कूजस्तिमिताः क्वचित्क्वचिदपि प्रोच्चण्डसत्त्वस्वनाः स्वेच्छासुप्तगभीरभोगभुजगश्वासप्रदीप्ताग्नयः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/निष्कूजस्तिमिताः क्वचित्क्वचिदपि .mp3",
+
+  "पुरा यत्र स्रोतः पुलिनमधुना तत्र सरितां विपर्यासं यातो " : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/पुरा यत्र स्रोतः .mp3",
+
+  "पौलस्त्यस्य जटयुषा विघटितः कार्ष्णायसोऽयं रथस्ते चैते पुरतः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/पौलस्त्यस्य जटायुषा.mp3",
+
+  "प्रियप्राया वृत्तिर्विनयमधुरो वाचि नियमः प्रकृत्या कल्याणी मतिरनवगीतः परिचयः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/प्रियप्राया वृत्तिर्विनयमधुरो .mp3",
+
+  "भ्रमिषु कृतपुटान्तर्मण्डलावृत्तिचक्षुः प्रचलितचटुलभ्रूताण्डवैर्मण्डयन्त्या" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/भ्रमिषु कृतपुटान्तर्मण्डलावृत्तिचक्षुः.mp3",
+
+  "यत्र द्रुमा अपि मृगा अपि बन्धवो मे यानि प्रियासहचरश्चिरमध्यवात्सम्" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/यत्र द्रुमा अपि.mp3",
+
+  "यथेच्छाभोग्यं वो वनमिदमयं मे सुदिवसः सतां सद्भिः सङ्गः कथमपि हि पुण्येन भवति" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/यथेच्छाभोग्यं वो वनमिदमयं .mp3",
+
+  "यदस्याः पत्युर्वा रहसि परमन्त्रायितमभूदभूवं दम्पत्योः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/यदस्याः पत्युर्वा रहसि .mp3",
+
+  "" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/यया पूतंमन्यो निधिरपि .mp3",
+
+  "यया पूतंमन्यो निधिरपि पवित्रस्य महसः पतिस्ते पूर्वेषामपि खलु " : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/यया पूतंमन्यो निधिरपि .mp3",
+
+  "यस्यां ते दिवसास्तया सह मया नीता यथा स्वे गृहे" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/यस्यां ते दिवसास्तया.mp3",
+
+  "येनोद्गच्छद्विसकिसलयस्निग्धदन्ताङ्कुरेण व्याकृष्टस्ते सुतनु !" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/येनोद्गच्छद्विसकिसलय.mp3",
+
+  "लीलोत्खातमृणालकाण्डकवलच्छेदेषु सम्पादिताः पुष्यत्पुष्करवासितस्य पयसो गण्डूषसंक्रान्तयः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/लीलोत्खातमृणालकाण्डकवलच्छेदेषु.mp3",
+
+  "विलुलितमतिपूरैर्बाष्पमानन्दशोक- प्रभवमवसृजन्ती पक्ष्मलोत्तानदीर्घा" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/विलुलितमतिपूरैर्बाष्पमानन्दशोक.mp3",
+
+  "वेलोल्लोलक्षुभितकरुणोज्जृम्भणस्तम्भनार्थं यो यो यत्नः कथमपि समाधीयते तं तमन्तः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/वेलोल्लोलक्षुभितकरुणो.mp3",
+
+  "शिशुर्वा शिष्या वा यदसि मम तत्तिष्ठतु तथा विशुद्धेरुत्कर्षस्त्वयि तु मम भक्तिं द्रढयति" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/शिशुर्वा शिष्या वा यदसि .mp3",
+
+  "स राजा तत्सौख्यं स च शिशुजनस्ते च दिवसाः स्मृतावाविर्भूतं" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/स राजा तत्सौख्यं .mp3",
+
+  "स संबन्धी श्लाघ्यः प्रियसुदसौ तच्च हृदयं स चानन्दः साक्षादपि" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/स संबन्धी श्लाघ्यः .mp3",
+
+  "स्निग्धश्यामाः क्वचिदपरतो भीषणाभोगरूक्षाः स्थाने स्थाने मुखरककुभो झाङ्कृतैर्निर्झराणाम् एते" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/स्निग्धश्यामाः क्वचिदपरतो.mp3",
+
+  "स्पर्शः पुरा परिचितो नियतं स एव सञ्जीवनश्च मनसः परितोषणश्च" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/स्पर्शः पुरा परिचितो.mp3",
+
+  "हा हा देवि ! स्फुटति हृदयं ध्वंसते देहबन्धः शून्यं मन्ये" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/हा हा देवि स्फुटति .mp3",
+
+  "सोऽस्मद्विधानां प्रणयैः कृशीकृतो न तेन कश्चिद्विभवैर्विमानितः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/निदाघकालेशुष्कतानृण.mp3",
+  
+  "" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/.mp3",
+
 
   // "" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/.mp3",
   
