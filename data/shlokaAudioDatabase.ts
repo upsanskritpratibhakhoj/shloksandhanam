@@ -618,6 +618,44 @@ export const shlokaAudioDatabase: Record<string, string> = {
 
   "हविर्भुजां एधवतां चतुर्णां मध्ये ललाटंतपसप्तसप्तिः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/हविर्भुजामेधवतां चतुर्णां मध्ये.mp3",
 
+  "अद्धा श्रियं पालितसंगराय प्रत्यर्पयिष्यत्यनघां स साधुः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/अद्धा श्रियं पालितसंगराय.mp3",
+
+  "असौ पुरस्कृत्य गुरुं पदातिः पश्चादवस्थापितवाहिनीकः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/असौ पुरस्कृत्य गुरुं पदातिः.mp3",
+
+  "इक्ष्वाकुवंशगुरवे प्रयतः प्रणम्य स भ्रातरं" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/इक्ष्वाकुवंशगुरवे प्रयतः.mp3",
+
+  "एतावदुक्तवति दाशरथौ तदीयामिच्छां विमानमधिदेवतया विदित्वा" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/एतावदुक्तवति दाशरथौ.mp3",
+
+  "क्रोशार्धं प्रकृतिपुरःसरेण गत्वा काकुत्स्थः स्तिमितजवेन" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/क्रोशार्धं प्रकृतिपुरःसरेण गत्वा.mp3",
+
+  "जलानि या तीरनिखातयूपा वहत्ययोध्यामनु राजधानीम्" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/जलानि या तीरनिखातयूपा.mp3",
+
+  "तत्रेश्वरेण जगतां प्रलयादिवोर्वीं वर्षात्ययेन" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/तत्रेश्वरेण जगतां प्रलयादि.mp3",
+
+  "तस्मात्पुरःसरविभीषणदर्शितेन सेवाविचक्षणहरीश्वरदत्तहस्तः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/तस्मात्पुरःसरविभीषणदर्शनेन.mp3",
+
+  "दुर्जातबन्धुरयमृक्षहरीश्वरो मे पौलस्त्य एष समरेषु पुरः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/दुर्जातबन्धुरयमृक्षहरीश्वरो.mp3",
+
+  "पित्रा विसृष्टां मदपेक्षया यः श्रियं युवाप्यङ्कगतामभोक्ता" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/पित्रा विसृष्टां मदपेक्षया.mp3",
+
+  "भूयस्ततो रघुपतिर्विलसत्पताकमध्यास्त कामगति सावरजो विमानम्" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/भूयस्ततो रघुपतिर्विलसत्पताक.mp3",
+
+  "यां सैकतोत्सङ्गसुखोचितानां प्राज्यैः पयोभिः परिवर्धितानाम्" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/यां सैकतोत्सङ्गसुखोचितानां.mp3",
+
+  "रामाज्ञया हरिचमूपतयस्तदानीं कृत्वा मनुष्यवपुरारुरुहुर्गजेन्द्रान्" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/रामाज्ञया हरिचमूपतयस्तदानीं.mp3",
+
+  "लङ्केश्वरप्रणतिभङ्गदृढव्रतं तद् वन्द्यं युगं" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/लङ्केश्वरप्रणतिभङ्गदृढव्रतं.mp3",
+
+  "विरक्तसंध्याकपिशं पुरस्ताद्यतो रजः पार्थिवमुज्जिहीते" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/विरक्तसंध्याकपिशं पुरस्ताद्.mp3",
+
+  "श्मश्रुप्रवृद्धिजनिताननविक्रियांश्च प्लक्षान्प्ररोहजटिलानिव" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/श्मश्रुप्रवृद्धिजनितानन.mp3",
+
+  "सानुप्लवः प्रभुरपि क्षणदाचराणां भेजे रथान्दशरथप्रभवानुशिष्टः" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/सानुप्लवः प्रभुरपि क्षणदाचराणां.mp3",
+
+  "सेयं मदीया जननीव तेन मान्येन राज्ञा सरयूर्वियुक्ता" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/सेयं मदीया जननीव.mp3",
+
+  "सौमित्रिणा तदनु संससृजे स चैन- मुत्थाप्य नम्रशिरसं" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/सौमित्रिणा तदनु संससृजे.mp3",
+
   // "" : "https://raw.githubusercontent.com/upsanskritpratibhakhoj/shlokas_audio/main/audio/.mp3",
   
   // Add more shloka-to-audio mappings here
