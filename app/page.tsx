@@ -44,12 +44,18 @@ export default function HomePage() {
             Explore over {totalCount.toLocaleString('en-US')} Sanskrit shlokas from classical
             literature. Search, read, and learn.
           </p>
-          <div className="flex justify-center pt-4">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4">
             <Link
               href="/explore"
-              className="px-6 sm:px-8 py-3 sm:py-4 bg-saffron text-white rounded-xl font-bold text-base sm:text-lg shadow-xl hover:scale-105 transition-all"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-saffron text-white rounded-xl font-bold text-base sm:text-lg shadow-xl hover:scale-105 transition-all text-center"
             >
               Start Exploring
+            </Link>
+            <Link
+              href="/typing-guide"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white text-saffron border-2 border-saffron rounded-xl font-bold text-base sm:text-lg shadow-md hover:bg-orange-50/50 transition-all text-center"
+            >
+              Typing Guide
             </Link>
           </div>
         </section>

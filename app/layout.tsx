@@ -74,6 +74,12 @@ export default function RootLayout({
                   Home
                 </Link>
                 <Link
+                  href="/typing-guide"
+                  className="text-xs sm:text-sm font-semibold text-gray-600 hover:text-orange-600 transition-colors px-2 py-1"
+                >
+                  Typing Guide
+                </Link>
+                <Link
                   href="/explore"
                   className="px-3 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-bold transition-all bg-saffron text-white shadow-md"
                 >

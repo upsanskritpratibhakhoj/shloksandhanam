@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
+import Link from 'next/link';
 import Sanscript from '@indic-transliteration/sanscript';
 import ShlokaDropdown from './ShlokaDropdown';
 import {
@@ -125,9 +126,17 @@ const SearchInterface: React.FC = () => {
         </div>
 
         {transliteratedPreview && !isDevanagari(searchInput) && (
-          <div className="mt-2 text-sm text-gray-500 bg-orange-50 px-3 py-2 rounded-md">
-            <span className="text-gray-400">Searching for: </span>
-            <span className="devanagari font-semibold text-saffron">{transliteratedPreview}</span>
+          <div className="mt-2 text-sm text-gray-500 bg-orange-50 px-3 py-2 rounded-md flex justify-between items-center">
+            <div>
+              <span className="text-gray-400">Searching for: </span>
+              <span className="devanagari font-semibold text-saffron">{transliteratedPreview}</span>
+            </div>
+            <Link
+              href="/typing-guide"
+              className="text-xs text-saffron hover:underline font-semibold flex items-center gap-1"
+            >
+              Typing Guide ↗
+            </Link>
           </div>
         )}
 
@@ -212,6 +221,13 @@ const SearchInterface: React.FC = () => {
               <li>• बेहतर परिणाम के लिए प्रसिद्ध ग्रंथों के शुरुआती पद खोजें।</li>
               <li>• English में जैसे &quot;raghuvamsham&quot;, &quot;ansham&quot;, &quot;moksha&quot; लिख सकते हैं।</li>
               <li>• System automatically English phonetics ko देवनागरी में बदल देता है.</li>
+              <li>
+                • Need help typing in Sanskrit? Refer to our{' '}
+                <Link href="/typing-guide" className="text-saffron hover:underline font-bold">
+                  Typing Guide
+                </Link>{' '}
+                for character mappings.
+              </li>
             </ul>
           </div>
 

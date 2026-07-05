@@ -27,34 +27,77 @@
  * normalizePhonetic("moksha") // → "moksha"
  * normalizePhonetic("shlokam") // → "shlokam" (sh preserved)
  */
+const commonWordMappings: { [key: string]: string } = {
+  'krishna': 'kRShNa',
+  'rishi': 'RRiShi',
+  'sanskrit': 'saMskRta',
+  'samskrit': 'saMskRta',
+  'samskrita': 'saMskRta',
+  'samskrta': 'saMskRta',
+  'vishnu': 'viShNu',
+  'lakshmi': 'lakShmI',
+  'ganesha': 'gaNesha',
+  'ramayana': 'rAmAyaNa',
+  'upanishad': 'upaniShad',
+  'bhagavadgita': 'bhagavadgItA',
+  'gita': 'gItA',
+  'matri': 'mAtRRi',
+  'pitri': 'pitRRi',
+  'bhratri': 'bhrAtRRi'
+};
+
+/**
+ * Normalizes phonetic English input to ITRANS-compatible format
+ * 
+ * @param input - Casual English phonetic input
+ * @returns ITRANS-compatible normalized string
+ */
 export function normalizePhonetic(input: string): string {
   if (!input) return '';
 
-  return input
-    // Preserve aspirated consonants and special sounds
-    .replace(/sh/gi, 'sh')   // श (sha)
-    .replace(/ch/gi, 'ch')   // च (cha)
-    .replace(/kh/gi, 'kh')   // ख (kha)
-    .replace(/gh/gi, 'gh')   // घ (gha)
-    .replace(/th/gi, 'th')   // थ (tha)
-    .replace(/dh/gi, 'dh')   // ध (dha)
-    .replace(/ph/gi, 'ph')   // फ (pha)
-    .replace(/bh/gi, 'bh')   // भ (bha)
-    
-    // Handle nasals
-    .replace(/ng/gi, 'ṅ')    // ङ (velar nasal)
-    
-    // Handle anusvāra (ं)
-    // Convert 'm' at word end to 'M' (anusvāra)
-    .replace(/m$/gi, 'M')    
-    // Convert 'am' to 'aM' (common pattern for anusvāra)
-    .replace(/am\b/gi, 'aM')
-    // Convert 'um' to 'uM' 
-    .replace(/um\b/gi, 'uM')
-    // Convert 'im' to 'iM'
-    .replace(/im\b/gi, 'iM')
-    // Convert 'om' to 'oM'
-    .replace(/om\b/gi, 'oM');
+  let normalized = input;
+
+  // 1. Replace common words case-insensitively using word boundaries
+  for (const [casual, standard] of Object.entries(commonWordMappings)) {
+    const regex = new RegExp('\\b' + casual + '\\b', 'gi');
+    normalized = normalized.replace(regex, standard);
+  }
+
+  // 2. Map vocalic R patterns to ITRANS 'RRi'
+  // Long Vocalic R (ॠ) - 'RR' to 'RRI' (unless already followed by i/I)
+  normalized = normalized.replace(/RR(?![iI])/gi, 'RRI');
+
+  // At the start of a word: 'rishi' -> 'RRishi', 'Rishi' -> 'RRishi'
+  // Exclude 'r' and 'R' from the lookahead to avoid double-matching RRi
+  normalized = normalized.replace(/\b[rR][iI]?(?=[bcdfghjklmnpqstvwxyzBCDFGHJKLMNPQSTVWXYZ])/g, 'RRi');
+  
+  // Special case: word 'R' or 'ri' alone
+  normalized = normalized.replace(/\b[rR][iI]?\b/g, 'RRi');
+
+  // After a consonant, map 'R', 'ri', or 'r' (between consonants) to 'RRi'
+  const C = '[bcdfghjklmnpqstvwxyzBCDFGHJKLMNPQSTVWXYZ]';
+  const rRegex1 = new RegExp('(' + C + ')[rR][iI]?(?=[bcdfghjklmnpqstvwxBCDFGHJKLMNPQSTVWX]|$)', 'g');
+  normalized = normalized.replace(rRegex1, '$1RRi');
+
+  // Case B: tri/tri at the end of word -> tRRi (e.g. pitri -> pitRRi, matri -> matRRi)
+  normalized = normalized.replace(/([tT])r[iI]?\b/g, '$1RRi');
+
+  // 3. Normalization for other common casual transliterations:
+  normalized = normalized.replace(/shh/gi, 'Sh');
+  normalized = normalized.replace(/chh/gi, 'Ch');
+  normalized = normalized.replace(/ksh/gi, 'kSh');
+  normalized = normalized.replace(/shree/gi, 'shrI');
+  normalized = normalized.replace(/shri(?=[^aeiou]|$)/gi, 'shrI');
+  normalized = normalized.replace(/gya/gi, 'j~na');
+  normalized = normalized.replace(/jna/gi, 'j~na');
+
+  // Visarga (ः) - 'h' at end of word after a vowel
+  normalized = normalized.replace(/([aeiouAEIOU])h\b/g, '$1H');
+
+  // Avagraha (ऽ) - '/' to '.a'
+  normalized = normalized.replace(/\//g, '.a');
+
+  return normalized;
 }
 
 /**
